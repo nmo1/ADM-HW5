@@ -151,7 +151,10 @@ def visualize(graph,list):
 def main():
     #listc= choose the list of node to visit the format will be: listc= [n,n,n,n]
     #typec = choose between t, network or d
-    #s= choose the first node
+    #s= choose the first nod
+    listc=[234, 1234, 123435,1715, 34323, 4356]
+    typec='d'
+    s=1
     f4=fun4(typec,s, listc)
     visualize(f4,listc)
 
