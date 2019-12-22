@@ -134,12 +134,9 @@ def visualize(graph):
     plt.show()
 
 def main():
-    #listc= choose the list of node to visit the format will be: list= [n,n,n,n]
-    listc=[1048577, 1690, 1692, 1694, 1048937,1715]
-    #typec = choose between time, network or distance
-    typec='network'
+    #listc= choose the list of node to visit the format will be: listc= [n,n,n,n]
+    #typec = choose between t, network or d
     #s= choose the first node
-    s=1
     f3=createPath(typec,s, listc)[0]
     visualize(f3)
 
