@@ -27,14 +27,14 @@ The aim of this homework was to write some important algorithms and their visual
  - fun4:take in input any kind of graph and make a new output using createGrah.
 
  ## Repository structure:
- **main.py** 
- - take in input an integer (from 1 to 4), that corresponds to the funcions.
- **func_1.py** 
- - Find the Neighbours
- **func_2.py** 
- - Find the smartest Network
- **func_3.py** 
- - Shortest Ordered Route
- **func_4.py** 
- - Shortest Route
+ 
+ **main.py**   - take in input an integer (from 1 to 4), that corresponds to the funcions.
+ 
+ **func_1.py** - Find the Neighbours
+ 
+ **func_2.py** - Find the smartest Network
+ 
+ **func_3.py** - Shortest Ordered Route
+ 
+ **func_4.py** - Shortest Route
 
