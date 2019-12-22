@@ -37,7 +37,7 @@ def graphT(timeGraph):
     return timeGraph
 
 
-def graphD(distanceGraph, baseGraph):
+def graphDB(distanceGraph, baseGraph):
     with open('C:\\Users\\Giorgio\\Desktop\\hw5\\USA-road-d.CAL.gr', 'r') as f1:
         for row in csv.reader(f1):
             if row[0][0] == 'a':
@@ -55,7 +55,7 @@ def graphD(distanceGraph, baseGraph):
 distanceGraph = nx.Graph()
 baseGraph = nx.Graph()
 timeGraph = nx.Graph()
-distanceGraph,baseGraph=graphD(distanceGraph,baseGraph)
+distanceGraph,baseGraph=graphDB(distanceGraph,baseGraph)
 timeGraph=graphT(timeGraph)
 
 def createPath(typec, nodes, arrList, min=None):
@@ -126,17 +126,20 @@ def order(graph, nodes, dest):
     return res
 
 def visualize(graph):
-    g_vis = baseGraph.subgraph(graph)
-    pos = nx.get_node_attributes(g_vis, 'p')
-    dist_color = 'red'
-    draw_networkx(g_vis, pos, with_labels=False, node_size=10, node_color='b', width=2, edge_color=dist_color)
-    nx.draw_networkx_nodes(g_vis, pos, nodelist=[1], node_color='b', node_size=100)
+    visuGraph = baseGraph.subgraph(graph)
+    pos = nx.get_node_attributes(visuGraph, 'p')
+    linkColor = 'red'
+    draw_networkx(visuGraph, pos, with_labels=False, node_size=15, node_color='b', width=2, edge_color=linkColor)
+    nx.draw_networkx_nodes(visuGraph, pos, nodelist=[1], node_color='b', node_size=90)
     plt.show()
 
 def main():
     #listc= choose the list of node to visit the format will be: list= [n,n,n,n]
+    listc=[1048577, 1690, 1692, 1694, 1048937,1715]
     #typec = choose between time, network or distance
+    typec='network'
     #s= choose the first node
+    s=1
     f3=createPath(typec,s, listc)[0]
     visualize(f3)
 

@@ -145,7 +145,7 @@ def visualize(graph,list):
     pos=nx.get_node_attributes(visuGraph,'p')
     linkColor='red'
     draw_networkx(visuGraph, pos, with_labels=False, node_size=15, node_color='b', width=2, edge_color=linkColor)
-    nx.draw_networkx_nodes(visuGraph,pos, nodelist=list, node_color='b', node_size=110)
+    nx.draw_networkx_nodes(visuGraph,pos, nodelist=list, node_color='b', node_size=90)
     plt.show()
 
 def main():
