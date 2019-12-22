@@ -16,6 +16,7 @@ The aim of this homework was to write some important algorithms and their visual
  - where we used the bfs algorithm to find all the nodes at the given distance  
 
  **Functionality 2 - Find the smartest Network:** 
+  - The function find smartest receives two parameteres, first the list of nodes that must be passed. Then the type of weight that should be considered for analysis. ed_t, ed_d, ed_1 which respectively stand fortime, distance and edges weghted 1.
 
  **Functionality 3 - Shortest Ordered Route:** 
 
