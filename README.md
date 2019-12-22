@@ -3,7 +3,9 @@
 ## Authors:
 
 Hamed Asadollahi
+
 Giorgio Manca
+
 Daniele Trappolini  
 
 ## Homework objective:
