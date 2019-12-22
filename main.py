@@ -12,8 +12,8 @@ import func_4
 def main(i):
     if i == 1:
         func_1.main()
-    if i == 2:
-        func_2.LOSAPREMO
+    #if i == 2:
+     #   func_2.LOSAPREMO
     if i == 3:
         func_3.main()
     if i == 4:
